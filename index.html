@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Placement Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎓 Placement Management System</h1>
+
+<input type="text" id="search" placeholder="Search by name..." onkeyup="searchStudent()">
+
+<form id="form">
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="text" id="usn" placeholder="USN" required>
+  <input type="text" id="company" placeholder="Company">
+  
+  <select id="status">
+    <option>Placed</option>
+    <option>Not Placed</option>
+  </select>
+
+  <button type="submit">Add Student</button>
+</form>
+
+<h2>📋 Student Records</h2>
+
+<select onchange="filterStatus(this.value)">
+  <option value="All">All</option>
+  <option value="Placed">Placed</option>
+  <option value="Not Placed">Not Placed</option>
+</select>
+
+<h2>📊 Dashboard</h2>
+<p>Total Students: <span id="total"></span></p>
+<p>Placed: <span id="placed"></span></p>
+<p>Not Placed: <span id="notPlaced"></span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>USN</th>
+      <th>Company</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="table"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<button onclick="logout()">Logout</button>
