@@ -3,6 +3,10 @@
 ## 🔗 Live Demo
 https://Ardx1416.github.io/SS08
 
+## Credintials
+Login id - Admin ,
+Password - 1234
+
 ## 🚀 Features
 - Admin login system
 - Add and manage student records
@@ -18,6 +22,4 @@ https://Ardx1416.github.io/SS08
 ## 📌 Description
 This project is a simple Placement Management System that helps manage student placement records with basic CRUD operations and authentication.
 
-## Credintials
-Login id - Admin 
-Password - 1234
+
